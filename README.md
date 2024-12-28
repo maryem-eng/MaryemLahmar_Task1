@@ -12,6 +12,11 @@ To run the code, execute the Python file code.py with: python code.py
 The program will start capturing frames from the camera and perform eye blink and fatigue detection. If fatigue is detected, an alert message will appear, and an alarm sound will be played.
 To quit the program, press the 'q' key to exit the detection application.
 
+*Additional features 
+-Fatigue Detection: The system detects signs of fatigue based on the user's eye aspect ratio. If the EAR drops below a certain threshold over multiple frames, the program triggers a fatigue warning by displaying a 
+ message ("FATIGUE DETECTED!") on the screen and sounding an alarm (on Windows systems). This feature helps prevent accidents or safety issues caused by fatigue.
+-Windows Alarm Sound: On Windows operating systems, the program uses the winsound module to play an alarm sound when fatigue is detected, providing an auditory alert to the user.
+
 *Assumptions
 -Single Face Detection: The program is designed to detect only one face at a time. If multiple faces are present, it may not function as expected.
 
